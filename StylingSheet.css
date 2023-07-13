@@ -1,0 +1,26 @@
+html{
+    font-family: 'Times New Roman', Arial, serif;
+}
+h1,h2{
+    color:#3EB489;
+}
+footer{
+    border-radius: 5px;
+    color:white;
+}
+input{
+    border-radius: 5px;
+}
+#submit{
+    border:none; 
+    border-radius:5px; 
+    background-color:#3EB489; 
+    color:white;
+}
+#profile{
+    border-radius:30px;
+}
+
+ul{
+    column-count:2;
+}
