@@ -1,7 +1,7 @@
 html{
     font-family: 'Times New Roman', Arial, serif;
 }
-h1,h2{
+h1,h2,h3{
     color:#3EB489;
 }
 footer{
@@ -9,7 +9,9 @@ footer{
     color:white;
 }
 input{
+    border-width: 2px;
     border-radius: 5px;
+    border-color: #3EB489;
 }
 #submit{
     border:none; 
@@ -18,9 +20,22 @@ input{
     color:white;
 }
 #profile{
-    border-radius:30px;
+    border-radius:500px;
 }
 
-ul{
+#languages{
     column-count:2;
+}
+li{
+    list-style:none;
+}
+li::before{
+    /*Unicode for the bullet*/
+    content: "\2022";
+
+    color: #3EB489;
+
+    display: inline-block;
+    width:1em;
+    margin-left: -1em;
 }
