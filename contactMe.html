@@ -1,4 +1,8 @@
 <html>
+    <head>
+        <title> Jensen Bromm's Website </title>
+        <link rel="stylesheet" href="StylingSheet.css">
+    </head>
     <body>
         <header>
             <h1> Jensen Bromm's Website </h1>
@@ -10,19 +14,25 @@
             </h3>
         </header>
         <h2 >Contact Me! </h2>
-            <form>
-                <label for="type"> Type of Contact: </label>
-                <select id="type">
-                    <option> Professional </option>
-                    <option> Social </option>
-                </select> <br>
-                <label for="name">Name: </label>
-                <input type="text" id="name"> <br>
+        <p>
+            Feel free to reach out to me for business oppritunities!
+            <ul>
+                <li><a href="https://www.linkedin.com/in/jensen-bromm-604642195/">LinkedIn</a></li>
+                <li>Email: Jensenbromm580@gmail.com</a><button onclick="copyText()"><img id="copy" width=20 src="https://m.media-amazon.com/images/I/417A5CPjLiL.png"></button></li>
+            </ul>
+        </p>
 
-                <label for="em"> Email: </label>
-                <input type="email" id="em"> <br>
-
-                <input type="submit" id="submit" onclick="alert('Email Sent! I will reach out to speak with you!')">
-            </form>
+        <script>
+            function copyText() {
+                /* Copy text into clipboard */
+                navigator.clipboard.writeText("jensenbromm580@gmail.com")
+                .then(() => {
+                    alert("Email Copied to Clipboard!");
+                })
+                .catch(() => {
+                    alert("something went wrong");
+                });
+            }
+        </script>
     </body>
 </html>
